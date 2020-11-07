@@ -7,3 +7,7 @@ lis.forEach((li, i) => {
   const color = colors[i];
   li.style.color = color;
 })
+const newh2 = document.createElement(`h2`);
+newh2.innerText = `The coolness adentifyer`;
+
+h1.appendChild(newh2);
