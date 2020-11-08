@@ -13,3 +13,19 @@ body {
   font-size: 30px;
   color: olive;
 }
+
+.infopic {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+/* .btn2 {
+  width: 100px;
+  background-color: rgba(238, 15, 15, 0.637);
+  border-radius: 20px;
+  color: aliceblue;
+  position: relative;
+  top: 10px;
+  left: 10px;
+} */

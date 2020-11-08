@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+}
+h2 {
+  text-align: center;
+}
