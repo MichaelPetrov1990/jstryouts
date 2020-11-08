@@ -12,13 +12,21 @@ newh2.innerText = `The coolness adentifyer`;
 
 h1.appendChild(newh2);
 
+const fakeRequest = (url) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const rand = Math.random();
+      if (rand < 0.3) {
+        reject();
+      } else {
+        resolve();
+      }
+    }, 3000);
+  });
+};
 
-
-// const btn2 = document.querySelector('.btn2');
-
-// btn2.addEventListener('mouseover', function () {
-//   const height = Math.floor(Math.random() * window.innerHeight);
-//   const width = Math.floor(Math.random() * window.innerWidth);
-//   btn2.style.left = `${width}px`;
-//   btn2.style.top = `${height}px`;
-// });
+fakeRequest().then(() => {
+  console.log(`Worked`);
+}).catch(() => {
+  console.log(`Didn't work`);
+});
