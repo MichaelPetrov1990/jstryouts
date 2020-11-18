@@ -25,8 +25,10 @@ const fakeRequest = (url) => {
   });
 };
 
-fakeRequest().then(() => {
-  console.log(`Worked`);
-}).catch(() => {
-  console.log(`Didn't work`);
-});
+fakeRequest()
+  .then(() => {
+    console.log(`Worked`);
+  })
+  .catch(() => {
+    console.log(`Didn't work`);
+  });
