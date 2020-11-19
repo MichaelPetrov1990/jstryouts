@@ -2,6 +2,8 @@
 // h2.innerText = `script`
 // document.body.append(h2)
 
+//FETCH:
+
 // const promi = fetch(`https://swapi.dev/api/planets/`, { mode: 'cors' })
 //   .then((response) => {
 //     if (!response.ok)
@@ -16,12 +18,21 @@
 //     console.log(`SOMETHNG WENT WRONG`)
 //     console.log(err)
 //   })
-// axios:
 
-axios.get(`https://swapi.dev/api/planets/`)
-  .then((res) => {
-    console.log(res.data.results)
-  })
-  .catch((err) => {
-    console.log(`in error: ${err}`)
-  })
+// AXIOS:
+
+// axios.get(`https://swapi.dev/api/planets/`)
+//   .then((res) => {
+//     console.log(res.data.results)
+//   })
+//   .catch((err) => {
+//     console.log(`in error: ${err}`)
+//   })
+
+//ASYNC AND AWAIT:
+
+async function getPlanets() {
+  const results = await axios.get(`https://swapi.dev/api/planets/`);
+  console.log(results.data.results)
+}
+getPlanets()
